@@ -9,6 +9,8 @@ Feel free to open an [issue](https://github.com/Kardyne/BandageOverhaul/issues)
 if you encounter any problem or for suggestions. You can also ask for help on
 the TLD Modding discord.
 
+See [CHANGELOG.md](./CHANGELOG.md) for notable changes between versions.
+
 ## Features
 
 This mod adds a new `DirtyBandage` item in the game. It can be used in the
