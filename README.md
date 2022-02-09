@@ -33,6 +33,9 @@ is to increase infection risk by 20%.
 
 ## Installation
 
+Check [Xpazeman's mod list](https://xpazeman.com/tld-mod-list/) for more
+information.
+
 - Install [MelonLoader](https://github.com/LavaGang/MelonLoader) for The Long Dark.
 - Install [ModComponent](https://github.com/ds5678/ModComponent).
 - Install [ModSettings](https://github.com/zeobviouslyfakeacc/ModSettings).
