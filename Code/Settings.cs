@@ -6,8 +6,9 @@ namespace BandageOverhaul
     {
         internal static Settings instance = new Settings();
 
-        [Name("Example setting")]
-        [Description("Setting description")]
-        public bool exampleSetting = false;
+        [Name("Infection risk increase")]
+        [Description("Infection risk increase when applying a dirty bandage on blood loss")]
+        [Slider(0, 90)]
+        public int infectionRiskIncrease = 20;
     }
 }

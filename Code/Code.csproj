@@ -68,6 +68,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Patches.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BuildInfo.cs" />
     <Compile Include="Settings.cs" />
