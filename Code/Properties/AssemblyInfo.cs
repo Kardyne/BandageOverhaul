@@ -1,7 +1,7 @@
 ﻿using System.Reflection;
 using System.Runtime.InteropServices;
 using MelonLoader;
-using BuildInfo = TLDModTemplate.BuildInfo;
+using BuildInfo = BandageOverhaul.BuildInfo;
 
 [assembly: ComVisible(false)]
 
@@ -15,5 +15,5 @@ using BuildInfo = TLDModTemplate.BuildInfo;
 
 [assembly: AssemblyVersion(BuildInfo.Version)]
 [assembly: AssemblyFileVersion(BuildInfo.Version)]
-[assembly: MelonInfo(typeof(TLDModTemplate.Implementation), BuildInfo.Name, BuildInfo.Version, BuildInfo.Author, BuildInfo.DownloadLink)]
+[assembly: MelonInfo(typeof(BandageOverhaul.Implementation), BuildInfo.Name, BuildInfo.Version, BuildInfo.Author, BuildInfo.DownloadLink)]
 [assembly: MelonGame("Hinterland", "TheLongDark")]

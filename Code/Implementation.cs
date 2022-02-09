@@ -1,6 +1,6 @@
 ﻿using MelonLoader;
 
-namespace TLDModTemplate
+namespace BandageOverhaul
 {
     internal class Implementation : MelonMod
     {

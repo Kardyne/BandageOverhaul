@@ -1,6 +1,6 @@
 ﻿using ModSettings;
 
-namespace TLDModTemplate
+namespace BandageOverhaul
 {
     internal class Settings : JsonModSettings
     {
