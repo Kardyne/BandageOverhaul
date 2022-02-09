@@ -1,0 +1,40 @@
+{
+    "ModCookableComponent": {
+        "DisplayNameLocalizationId": "GAMEPLAY_DirtyBandage",
+        "DescriptionLocalizatonId": "GAMEPLAY_DirtyBandageDescription",
+        "InventoryActionLocalizationId": "GAMEPLAY_Use",
+        "WeightKG": 0.1,
+        "DaysToDecay": 0,
+        "MaxHP": 100,
+        "InitialCondition": "Perfect",
+        "InventoryCategory": "FirstAid",
+        "PickUpAudio": "Play_SndInvBandageCloth",
+        "PutBackAudio": "Play_SndInvBandageCloth",
+        "StowAudio": "Play_InventoryStow",
+        "WornOutAudio": "",
+        "InspectOnPickup": true,
+        "InspectDistance": 0.4,
+        "InspectAngles": [ -30, 0, 45 ],
+        "InspectOffset": [ 0.01, -0.045, 0 ],
+        "InspectScale": [ 1.3, 1.3, 1.3 ],
+        "NormalModel": "",
+        "InspectModel": "",
+
+        "Cooking": true,
+        "CookingMinutes": 15,
+        "CookingUnitsRequired": 1,
+        "CookingWaterRequired": 0.25,
+        "CookingResult": "GEAR_HeavyBandage",
+        "BurntMinutes": 40,
+        "Type": "Liquid",
+        "CookingAudio": "",
+        "StartCookingAudio": ""
+    },
+    "ModStackableBehaviour": {
+        "SingleUnitTextId": "GAMEPLAY_DirtyBandage",
+        "MultipleUnitTextId": "GAMEPLAY_DirtyBandageMultiple",
+        "StackSprite": "ico_units_bandage",
+        "UnitsPerItem": 1,
+        "ChanceFull": 100
+    }
+}

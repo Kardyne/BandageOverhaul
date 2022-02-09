@@ -1,0 +1,18 @@
+{
+    "Name": "Dirty Bandage",
+    "RequiredGear": ["GEAR_Cloth"],
+    "RequiredGearUnits": [1],
+    "KeroseneLitersRequired": 0,
+    "GunpowderKGRequired": 0,
+    "RequiredTool": "",
+    "OptionalTools": [],
+    "RequiredCraftingLocation": "Anywhere",
+    "RequiresLitFire": false,
+    "RequiresLight": false,
+    "CraftedResult": "GEAR_DirtyBandage",
+    "CraftedResultCount": 2,
+    "DurationMinutes": 10,
+    "CraftingAudio": "PLAY_CraftingCloth",
+    "AppliedSkill": "None",
+    "ImprovedSkill": "None"
+}

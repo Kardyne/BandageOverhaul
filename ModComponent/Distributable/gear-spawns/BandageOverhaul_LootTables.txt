@@ -1,0 +1,14 @@
+#----------------
+loottable=FirstAidKit
+#----------------
+item=DirtyBandage w=1
+
+#-----------------
+loottable=BackPack
+#-----------------
+item=DirtyBandage w=1
+
+#-----------------
+loottable=HumanCorpse
+#-----------------
+item=DirtyBandage w=1

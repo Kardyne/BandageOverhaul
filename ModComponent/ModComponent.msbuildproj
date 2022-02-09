@@ -17,9 +17,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="Distributable\auto-mapped\DELETE_ME" />
-    <None Include="Distributable\blueprints\DELETE_ME" />
-    <None Include="Distributable\gear-spawns\DELETE_ME" />
     <None Include="Unity\Assets\BandageOverhaul.unity" />
     <None Include="Unity\Assets\BandageOverhaul.unity.meta" />
     <None Include="Unity\Assets\ClothingPaperDoll.meta" />
@@ -67,6 +64,10 @@
     <None Include="Unity\.gitignore" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Distributable\auto-mapped\dirtybandage.json" />
+    <Content Include="Distributable\blueprints\DirtyBandageBlueprint.json" />
+    <Content Include="Distributable\BuildInfo.json" />
+    <Content Include="Distributable\gear-spawns\BandageOverhaul_LootTables.txt" />
     <Content Include="Unity\Assets\CraftingIcons\ico_CraftItem__DirtyBandage.png" />
     <Content Include="Unity\Assets\InventoryGridIcons\ico_GearItem__DirtyBandage.png" />
     <Content Include="Unity\Assets\Localization.json" />
