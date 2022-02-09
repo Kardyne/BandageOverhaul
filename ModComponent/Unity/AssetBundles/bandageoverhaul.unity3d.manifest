@@ -1,0 +1,40 @@
+ManifestFileVersion: 0
+CRC: 2756196300
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: bdc1a93810052d052231974b0ca7c46a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: a11bc08bc08ba8f80af7e10b7a29d3d9
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Prefabs/GEAR_DirtyBandage.prefab
+- Assets/CraftingIcons/ico_CraftItem__DirtyBandage.png
+- Assets/InventoryGridIcons/ico_GearItem__DirtyBandage.png
+- Assets/Localization.json
+Dependencies: []

@@ -1,11 +1,17 @@
 ﻿{
-    "GAMEPLAY_SampleItem" : {
-                            "English" : "Sample Item",
-                            "German" : "Beispielartikel",
-                            "Russian" : "Образец товара"
+    "GAMEPLAY_DirtyBandage": {
+        "English": "Dirty bandage"
     },
-    "GAMEPLAY_SampleItemDescription" : {
-                            "English" : "A sample item description",
-                            "German" : "Eine Beispielartikelbeschreibung"
+    "GAMEPLAY_DirtyBandageMultiple": {
+        "English": "Dirty bandages"
+    },
+    "GAMEPLAY_DirtyBandageDescription": {
+        "English": "Dirty bandage suitable for binding to constrict movement on an injury. Can stop blood loss at the cost of an increased infection risk. Should be sterilized in boiling water to make it suitable for stopping blood loss."
+    },
+    "GAMEPLAY_Bandage": {
+        "English":  "Sterile bandage"
+    },
+    "GAMEPLAY_Bandages": {
+        "English":  "Sterile bandages"
     }
 }

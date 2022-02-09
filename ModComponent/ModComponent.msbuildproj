@@ -20,34 +20,30 @@
     <None Include="Distributable\auto-mapped\DELETE_ME" />
     <None Include="Distributable\blueprints\DELETE_ME" />
     <None Include="Distributable\gear-spawns\DELETE_ME" />
+    <None Include="Unity\Assets\BandageOverhaul.unity" />
+    <None Include="Unity\Assets\BandageOverhaul.unity.meta" />
     <None Include="Unity\Assets\ClothingPaperDoll.meta" />
     <None Include="Unity\Assets\ClothingPaperDoll\Female.meta" />
-    <None Include="Unity\Assets\ClothingPaperDoll\Female\DELETE_This_was_to_make_github_show_this_folder" />
-    <None Include="Unity\Assets\ClothingPaperDoll\Female\DELETE_This_was_to_make_github_show_this_folder.meta" />
     <None Include="Unity\Assets\ClothingPaperDoll\Male.meta" />
-    <None Include="Unity\Assets\ClothingPaperDoll\Male\DELETE_This_was_to_make_github_show_this_folder" />
-    <None Include="Unity\Assets\ClothingPaperDoll\Male\DELETE_This_was_to_make_github_show_this_folder.meta" />
     <None Include="Unity\Assets\CraftingIcons.meta" />
-    <None Include="Unity\Assets\CraftingIcons\DELETE_This_was_to_make_github_show_this_folder" />
-    <None Include="Unity\Assets\CraftingIcons\DELETE_This_was_to_make_github_show_this_folder.meta" />
+    <None Include="Unity\Assets\CraftingIcons\ico_CraftItem__DirtyBandage.png.meta" />
     <None Include="Unity\Assets\Editor.meta" />
+    <None Include="Unity\Assets\Editor\BuildAssetBundles.cs" />
     <None Include="Unity\Assets\Editor\BuildAssetBundles.cs.meta" />
     <None Include="Unity\Assets\InventoryGridIcons.meta" />
-    <None Include="Unity\Assets\InventoryGridIcons\ico_GearItem__SampleItem.png.meta" />
-    <None Include="Unity\Assets\Localization.json" />
+    <None Include="Unity\Assets\InventoryGridIcons\ico_GearItem__DirtyBandage.png.meta" />
     <None Include="Unity\Assets\Localization.json.meta" />
     <None Include="Unity\Assets\Models.meta" />
+    <None Include="Unity\Assets\Models\DirtyBandage.asset" />
+    <None Include="Unity\Assets\Models\DirtyBandage.asset.meta" />
     <None Include="Unity\Assets\Models\Materials.meta" />
-    <None Include="Unity\Assets\Models\Materials\DELETE_This_was_to_make_github_show_this_folder" />
-    <None Include="Unity\Assets\Models\Materials\DELETE_This_was_to_make_github_show_this_folder.meta" />
+    <None Include="Unity\Assets\Models\Materials\DirtyBandage.mat" />
+    <None Include="Unity\Assets\Models\Materials\DirtyBandage.mat.meta" />
     <None Include="Unity\Assets\Models\Textures.meta" />
-    <None Include="Unity\Assets\Models\Textures\DELETE_This_was_to_make_github_show_this_folder" />
-    <None Include="Unity\Assets\Models\Textures\DELETE_This_was_to_make_github_show_this_folder.meta" />
+    <None Include="Unity\Assets\Models\Textures\DirtyBandage.png.meta" />
     <None Include="Unity\Assets\Prefabs.meta" />
-    <None Include="Unity\Assets\Prefabs\DELETE_This_was_to_make_github_show_this_folder" />
-    <None Include="Unity\Assets\Prefabs\DELETE_This_was_to_make_github_show_this_folder.meta" />
-    <None Include="Unity\Assets\Template.unity" />
-    <None Include="Unity\Assets\Template.unity.meta" />
+    <None Include="Unity\Assets\Prefabs\GEAR_DirtyBandage.prefab" />
+    <None Include="Unity\Assets\Prefabs\GEAR_DirtyBandage.prefab.meta" />
     <None Include="Unity\ProjectSettings\AudioManager.asset" />
     <None Include="Unity\ProjectSettings\ClusterInputManager.asset" />
     <None Include="Unity\ProjectSettings\DynamicsManager.asset" />
@@ -68,14 +64,20 @@
     <None Include="Unity\ProjectSettings\VFXManager.asset" />
     <None Include="Unity\ProjectSettings\XRSettings.asset" />
     <None Include="Unity\README.md" />
-    <None Include="Unity\Assets\Editor\BuildAssetBundles.cs" />
     <None Include="Unity\.gitignore" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Unity\Assets\InventoryGridIcons\ico_GearItem__SampleItem.png" />
+    <Content Include="Unity\Assets\CraftingIcons\ico_CraftItem__DirtyBandage.png" />
+    <Content Include="Unity\Assets\InventoryGridIcons\ico_GearItem__DirtyBandage.png" />
+    <Content Include="Unity\Assets\Localization.json" />
+    <Content Include="Unity\Assets\Models\Textures\DirtyBandage.png" />
     <Content Include="Unity\ProjectSettings\ProjectVersion.txt" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Kardyne.TLDBuildExtensions" Version="1.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Unity\Assets\ClothingPaperDoll\Female\" />
+    <Folder Include="Unity\Assets\ClothingPaperDoll\Male\" />
   </ItemGroup>
 </Project>
