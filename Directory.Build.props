@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (c) 2022 Kardyne. All rights reserved.
+Licensed under the MIT license. See LICENSE file in the project root for details.
+-->
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<!--Set custom values here if the default values do not work for you.
+		After tweaking the parameters here, you should reload the project to
+		ensure Visual Studio has up-to-date values. If it does not update,
+		restart VS and it should work.
+	-->
+	<PropertyGroup>
+		<!--TLD install root directory - auto-detected in most cases-->
+		<TLDDir></TLDDir>
+		<!--Unity Editor path - only needed for building AssetBundles-->
+		<UnityEditorPath></UnityEditorPath>
+		<!--Relative path from the project root to the Unity Project directory.
+		    Defaults to 'Unity'.-->
+		<UnityProjectRelativeDir></UnityProjectRelativeDir>
+		<!--Relative path from the project root to the ModComponent directory.
+			Defaults to 'Distributable'-->
+		<ModComponentRelativeDir></ModComponentRelativeDir>
+	</PropertyGroup>
+</Project>

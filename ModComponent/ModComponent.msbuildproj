@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.Build.NoTargets/3.2.14" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{E17ECE66-B590-49BA-AB9B-9B58FDE01D56}</ProjectGuid>
+    <AssemblyName>$(SolutionName)</AssemblyName>
+    <TargetFramework>net472</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="Distributable\auto-mapped\DELETE_ME" />
+    <None Include="Distributable\blueprints\DELETE_ME" />
+    <None Include="Distributable\gear-spawns\DELETE_ME" />
+    <None Include="Unity\Assets\ClothingPaperDoll.meta" />
+    <None Include="Unity\Assets\ClothingPaperDoll\Female.meta" />
+    <None Include="Unity\Assets\ClothingPaperDoll\Female\DELETE_This_was_to_make_github_show_this_folder" />
+    <None Include="Unity\Assets\ClothingPaperDoll\Female\DELETE_This_was_to_make_github_show_this_folder.meta" />
+    <None Include="Unity\Assets\ClothingPaperDoll\Male.meta" />
+    <None Include="Unity\Assets\ClothingPaperDoll\Male\DELETE_This_was_to_make_github_show_this_folder" />
+    <None Include="Unity\Assets\ClothingPaperDoll\Male\DELETE_This_was_to_make_github_show_this_folder.meta" />
+    <None Include="Unity\Assets\CraftingIcons.meta" />
+    <None Include="Unity\Assets\CraftingIcons\DELETE_This_was_to_make_github_show_this_folder" />
+    <None Include="Unity\Assets\CraftingIcons\DELETE_This_was_to_make_github_show_this_folder.meta" />
+    <None Include="Unity\Assets\Editor.meta" />
+    <None Include="Unity\Assets\Editor\BuildAssetBundles.cs.meta" />
+    <None Include="Unity\Assets\InventoryGridIcons.meta" />
+    <None Include="Unity\Assets\InventoryGridIcons\ico_GearItem__SampleItem.png.meta" />
+    <None Include="Unity\Assets\Localization.json" />
+    <None Include="Unity\Assets\Localization.json.meta" />
+    <None Include="Unity\Assets\Models.meta" />
+    <None Include="Unity\Assets\Models\Materials.meta" />
+    <None Include="Unity\Assets\Models\Materials\DELETE_This_was_to_make_github_show_this_folder" />
+    <None Include="Unity\Assets\Models\Materials\DELETE_This_was_to_make_github_show_this_folder.meta" />
+    <None Include="Unity\Assets\Models\Textures.meta" />
+    <None Include="Unity\Assets\Models\Textures\DELETE_This_was_to_make_github_show_this_folder" />
+    <None Include="Unity\Assets\Models\Textures\DELETE_This_was_to_make_github_show_this_folder.meta" />
+    <None Include="Unity\Assets\Prefabs.meta" />
+    <None Include="Unity\Assets\Prefabs\DELETE_This_was_to_make_github_show_this_folder" />
+    <None Include="Unity\Assets\Prefabs\DELETE_This_was_to_make_github_show_this_folder.meta" />
+    <None Include="Unity\Assets\Template.unity" />
+    <None Include="Unity\Assets\Template.unity.meta" />
+    <None Include="Unity\ProjectSettings\AudioManager.asset" />
+    <None Include="Unity\ProjectSettings\ClusterInputManager.asset" />
+    <None Include="Unity\ProjectSettings\DynamicsManager.asset" />
+    <None Include="Unity\ProjectSettings\EditorBuildSettings.asset" />
+    <None Include="Unity\ProjectSettings\EditorSettings.asset" />
+    <None Include="Unity\ProjectSettings\GraphicsSettings.asset" />
+    <None Include="Unity\ProjectSettings\InputManager.asset" />
+    <None Include="Unity\ProjectSettings\NavMeshAreas.asset" />
+    <None Include="Unity\ProjectSettings\NetworkManager.asset" />
+    <None Include="Unity\ProjectSettings\PackageManagerSettings.asset" />
+    <None Include="Unity\ProjectSettings\Physics2DSettings.asset" />
+    <None Include="Unity\ProjectSettings\PresetManager.asset" />
+    <None Include="Unity\ProjectSettings\ProjectSettings.asset" />
+    <None Include="Unity\ProjectSettings\QualitySettings.asset" />
+    <None Include="Unity\ProjectSettings\TagManager.asset" />
+    <None Include="Unity\ProjectSettings\TimeManager.asset" />
+    <None Include="Unity\ProjectSettings\UnityConnectSettings.asset" />
+    <None Include="Unity\ProjectSettings\VFXManager.asset" />
+    <None Include="Unity\ProjectSettings\XRSettings.asset" />
+    <None Include="Unity\README.md" />
+    <None Include="Unity\Assets\Editor\BuildAssetBundles.cs" />
+    <None Include="Unity\.gitignore" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Unity\Assets\InventoryGridIcons\ico_GearItem__SampleItem.png" />
+    <Content Include="Unity\ProjectSettings\ProjectVersion.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Kardyne.TLDBuildExtensions" Version="1.0.0" />
+  </ItemGroup>
+</Project>
