@@ -36,9 +36,10 @@ is to increase infection risk by 20%.
 - Install [MelonLoader](https://github.com/LavaGang/MelonLoader) for The Long Dark.
 - Install [ModComponent](https://github.com/ds5678/ModComponent).
 - Install [ModSettings](https://github.com/zeobviouslyfakeacc/ModSettings).
-- Download `BandageOverhaul.dll` and `BandageOverhaul.modcomponent` from the
-  [releases page](https://github.com/Kardyne/BandageOverhaul/releases) and move
-  them into your `Mods` folder.
+- Download `BandageOverhaul.zip` from the
+  [releases page](https://github.com/Kardyne/BandageOverhaul/releases) and
+  extract `BandageOverhaul.dll` and `BandageOverhaul.modcomponent` into your
+  `Mods` folder.
 
 ## Future features
 
