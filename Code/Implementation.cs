@@ -22,6 +22,10 @@ namespace BandageOverhaul
             AddCookingMeshes(dirtyBandagePrefab);
         }
 
+        /// <summary>
+        /// Add FirstAidItem component to the DirtyBandage item.
+        /// </summary>
+        /// <param name="dirtyBandagePrefab">Non-null prefab for the DirtyBandage item.</param>
         private void AddFirstAidItem(GameObject dirtyBandagePrefab)
         {
             FirstAidItem firstAidItem = ModComponent.Utils.ComponentUtils.GetOrCreateComponent<FirstAidItem>(dirtyBandagePrefab);
@@ -36,6 +40,15 @@ namespace BandageOverhaul
             firstAidItem.m_UseAudio = "Play_FirstAidBandage";
         }
 
+        /// <summary>
+        /// Add default water meshes to the DirtyBandage Cookable component.
+        /// </summary>
+        /// <param name="dirtyBandagePrefab">Non-null prefab for the DirtyBandage item.</param>
+        /// <exception cref="System.NullReferenceException">
+        /// Thrown when <paramref name="dirtyBandagePrefab"/>has no Cookable component or
+        /// if the m_WaterMesh property from the CookingPotItem component of GEAR_RecycledCan
+        /// and GEAR_CookingPot is null or cannot be accessed.
+        /// </exception>
         private void AddCookingMeshes(GameObject dirtyBandagePrefab)
         {
             Cookable cookable = dirtyBandagePrefab.GetComponent<Cookable>();
