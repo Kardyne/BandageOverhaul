@@ -60,17 +60,8 @@ namespace BandageOverhaul
                 GearItem cookingResult = selectedFood?.m_Cookable?.m_CookedPrefab;
                 if (selectedFood?.m_GearName == "GEAR_DirtyBandage" && cookingResult != null)
                 {
-                    FoodWeight dirtyBandageFoodWeight = ModComponent.Utils.ComponentUtils.GetOrCreateComponent<FoodWeight>(selectedFood);
-                    dirtyBandageFoodWeight.m_MinWeightKG = selectedFood.m_WeightKG;
-                    dirtyBandageFoodWeight.m_MaxWeightKG = selectedFood.m_WeightKG;
-                    dirtyBandageFoodWeight.m_CaloriesPerKG = 1;
-                    FoodWeight bandageFoodWeight = ModComponent.Utils.ComponentUtils.GetOrCreateComponent<FoodWeight>(cookingResult);
-                    bandageFoodWeight.m_MinWeightKG = cookingResult.m_WeightKG;
-                    bandageFoodWeight.m_MaxWeightKG = cookingResult.m_WeightKG;
-                    bandageFoodWeight.m_CaloriesPerKG = 1;
-
-                    selectedFood.m_FoodWeight = dirtyBandageFoodWeight;
-                    cookingResult.m_FoodWeight = bandageFoodWeight;
+                    AddDummyFoodWeight(selectedFood);
+                    AddDummyFoodWeight(cookingResult);
                 }
             }
 
@@ -81,18 +72,31 @@ namespace BandageOverhaul
                 GearItem cookingResult = selectedFood?.m_Cookable?.m_CookedPrefab;
                 if (selectedFood?.m_GearName == "GEAR_DirtyBandage" && cookingResult != null)
                 {
-                    FoodWeight dirtyBandageFoodWeight = selectedFood.GetComponent<FoodWeight>();
-                    if (dirtyBandageFoodWeight != null)
-                    {
-                        UnityEngine.Object.Destroy(dirtyBandageFoodWeight);
-                        selectedFood.m_FoodWeight = null;
-                    }
-                    FoodWeight bandageFoodWeight = cookingResult.GetComponent<FoodWeight>();
-                    if (bandageFoodWeight != null)
-                    {
-                        UnityEngine.Object.Destroy(bandageFoodWeight);
-                        cookingResult.m_FoodWeight = null;
-                    }
+                    RemoveFoodWeight(selectedFood);
+                    RemoveFoodWeight(cookingResult);
+                }
+            }
+
+            private static void AddDummyFoodWeight(GearItem gearItem)
+            {
+                if (gearItem == null)
+                {
+                    return;
+                }
+                FoodWeight foodWeight = ModComponent.Utils.ComponentUtils.GetOrCreateComponent<FoodWeight>(gearItem);
+                foodWeight.m_MinWeightKG = gearItem.m_WeightKG;
+                foodWeight.m_MaxWeightKG = gearItem.m_WeightKG;
+                foodWeight.m_CaloriesPerKG = 1;
+                gearItem.m_FoodWeight = foodWeight;
+            }
+
+            private static void RemoveFoodWeight(GearItem gearItem)
+            {
+                FoodWeight foodItem = gearItem?.GetComponent<FoodWeight>();
+                if (foodItem != null)
+                {
+                    UnityEngine.Object.Destroy(foodItem);
+                    gearItem.m_FoodWeight = null;
                 }
             }
         }
