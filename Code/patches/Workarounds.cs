@@ -13,13 +13,8 @@ namespace BandageOverhaul
                 // Add temporary FoodItem component to avoid errors in the SetCookedGearProperties method
                 if (rawItem?.m_GearName == "GEAR_DirtyBandage" && cookedItem != null)
                 {
-                    FoodItem dirtyBandageFoodItem = ModComponent.Utils.ComponentUtils.GetOrCreateComponent<FoodItem>(rawItem);
-                    rawItem.m_FoodItem = dirtyBandageFoodItem;
-                    FoodItem bandageFoodItem = ModComponent.Utils.ComponentUtils.GetOrCreateComponent<FoodItem>(cookedItem);
-                    cookedItem.m_FoodItem = bandageFoodItem;
-
-                    dirtyBandageFoodItem.m_CaloriesTotal = 1;
-                    bandageFoodItem.m_CaloriesTotal = 1;
+                    AddDummyFoodItem(rawItem);
+                    AddDummyFoodItem(cookedItem);
                 }
             }
 
@@ -28,18 +23,29 @@ namespace BandageOverhaul
                 // Remove temporary FoodItem component
                 if (rawItem?.m_GearName == "GEAR_DirtyBandage" && cookedItem != null)
                 {
-                    FoodItem dirtyBandageFoodItem = rawItem.GetComponent<FoodItem>();
-                    if (dirtyBandageFoodItem != null)
-                    {
-                        UnityEngine.Object.Destroy(dirtyBandageFoodItem);
-                        rawItem.m_FoodItem = null;
-                    }
-                    FoodItem bandageFoodItem = cookedItem.GetComponent<FoodItem>();
-                    if (bandageFoodItem != null)
-                    {
-                        UnityEngine.Object.Destroy(bandageFoodItem);
-                        cookedItem.m_FoodItem = null;
-                    }
+                    RemoveFoodItem(rawItem);
+                    RemoveFoodItem(cookedItem);
+                }
+            }
+
+            private static void AddDummyFoodItem(GearItem gearItem)
+            {
+                if (gearItem == null)
+                {
+                    return;
+                }
+                FoodItem foodItem = ModComponent.Utils.ComponentUtils.GetOrCreateComponent<FoodItem>(gearItem);
+                gearItem.m_FoodItem = foodItem;
+                foodItem.m_CaloriesTotal = 1;
+            }
+
+            private static void RemoveFoodItem(GearItem gearItem)
+            {
+                FoodItem foodItem = gearItem?.GetComponent<FoodItem>();
+                if (foodItem != null)
+                {
+                    UnityEngine.Object.Destroy(foodItem);
+                    gearItem.m_FoodItem = null;
                 }
             }
         }
