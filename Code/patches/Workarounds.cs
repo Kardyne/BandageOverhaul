@@ -8,9 +8,11 @@ namespace BandageOverhaul
         [HarmonyPatch(typeof(CookingPotItem), "SetCookedGearProperties")]
         internal class CookingPotItem_SetCookedGearProperties
         {
+            /// <summary>
+            /// Add temporary FoodItem component to avoid errors in the SetCookedGearProperties method.
+            /// </summary>
             private static void Prefix(CookingPotItem __instance, GearItem rawItem, GearItem cookedItem)
             {
-                // Add temporary FoodItem component to avoid errors in the SetCookedGearProperties method
                 if (rawItem?.m_GearName == "GEAR_DirtyBandage" && cookedItem != null)
                 {
                     AddDummyFoodItem(rawItem);
@@ -18,9 +20,11 @@ namespace BandageOverhaul
                 }
             }
 
+            /// <summary>
+            /// Remove temporary FoodItem component created in Prefix method.
+            /// </summary>
             private static void Postfix(CookingPotItem __instance, GearItem rawItem, GearItem cookedItem)
             {
-                // Remove temporary FoodItem component
                 if (rawItem?.m_GearName == "GEAR_DirtyBandage" && cookedItem != null)
                 {
                     RemoveFoodItem(rawItem);
@@ -53,9 +57,11 @@ namespace BandageOverhaul
         [HarmonyPatch(typeof(Panel_Cooking), "UpdateGearItem")]
         internal class Panel_Cooking_UpdateGearItem
         {
+            /// <summary>
+            /// Add temporary FoodWeight component to avoid errors in the UpdateGearItem method.
+            /// </summary>
             private static void Prefix(Panel_Cooking __instance)
             {
-                // Add temporary FoodWeight component to avoid errors in the UpdateGearItem method
                 GearItem selectedFood = __instance?.GetSelectedFood();
                 GearItem cookingResult = selectedFood?.m_Cookable?.m_CookedPrefab;
                 if (selectedFood?.m_GearName == "GEAR_DirtyBandage" && cookingResult != null)
@@ -65,9 +71,11 @@ namespace BandageOverhaul
                 }
             }
 
+            /// <summary>
+            /// Remove temporary FoodWeight component created in Prefix method.
+            /// </summary>
             private static void Postfix(Panel_Cooking __instance)
             {
-                // Remove temporary FoodWeight component
                 GearItem selectedFood = __instance?.GetSelectedFood();
                 GearItem cookingResult = selectedFood?.m_Cookable?.m_CookedPrefab;
                 if (selectedFood?.m_GearName == "GEAR_DirtyBandage" && cookingResult != null)

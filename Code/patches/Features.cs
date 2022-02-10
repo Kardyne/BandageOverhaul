@@ -15,6 +15,9 @@ namespace BandageOverhaul
                 ChangeClothHarvest();
             }
 
+            /// <summary>
+            /// Remove all blueprints creating HeavyBandages.
+            /// </summary>
             private static void RemoveBandageBlueprints()
             {
                 foreach (BlueprintItem bpi in Utils.FindBlueprintsForGear("GEAR_HeavyBandage"))
@@ -23,6 +26,9 @@ namespace BandageOverhaul
                 }
             }
 
+            /// <summary>
+            /// Change cloth harvest to give DirtyBandages instead of HeavyBandages.
+            /// </summary>
             private static void ChangeClothHarvest()
             {
                 Harvest clothHarvestPrefab = Resources.Load<GameObject>("GEAR_Cloth")?.GetComponent<Harvest>();
@@ -39,6 +45,9 @@ namespace BandageOverhaul
         [HarmonyPatch(typeof(BloodLoss), "BloodLossEnd")]
         internal class BloodLoss_BloodLossEnd
         {
+            /// <summary>
+            /// Increase infection risk when treating BloodLoss with a DirtyBandage item.
+            /// </summary>
             private static void Postfix(BloodLoss __instance, int index)
             {
                 FirstAidItem firstAidItem = GameManager.GetPlayerManagerComponent()?.m_FirstAidItemUsed;
