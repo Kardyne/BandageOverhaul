@@ -1,17 +1,21 @@
 ﻿{
     "GAMEPLAY_DirtyBandage": {
-        "English": "Dirty bandage"
+        "English": "Dirty bandage",
+        "Russian": "Грязная повязка"
     },
     "GAMEPLAY_DirtyBandageMultiple": {
         "English": "Dirty bandages"
     },
     "GAMEPLAY_DirtyBandageDescription": {
-        "English": "Dirty bandage suitable for binding to constrict movement on an injury. Can stop blood loss at the cost of an increased infection risk. Should be sterilized in boiling water to make it suitable for stopping blood loss."
+        "English": "Dirty bandage suitable for binding to constrict movement on an injury. Can stop blood loss at the cost of an increased infection risk. Should be sterilized in boiling water to make it suitable for stopping blood loss.",
+    	"Russian": "Справится даже с серьёзной кровопотерей, но нестерильность материала может привести к заражению раны. Обязательно прокипятите повязку в течение некоторого времени, чтобы она стала стерильной и пригодной для безопасного использования."
     },
     "GAMEPLAY_Bandage": {
-        "English":  "Sterile bandage"
+        "English":  "Sterile bandage",
+        "Russian":  "Стерильная повязка"
     },
     "GAMEPLAY_Bandages": {
-        "English":  "Sterile bandages"
+        "English":  "Sterile bandages",
+        "Russian":  "Стерильные повязки"
     }
 }
